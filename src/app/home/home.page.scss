@@ -1,0 +1,74 @@
+#container {
+  text-align: center;
+
+  position: floating;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.Formulario input[type="checkbox"]{
+  display: none;
+}
+
+.Formulario .checkbox label{
+  color: #0774d9;
+  background:none;
+  padding: 5px 15px 5px 51px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.Formulario .checkbox label:hover{
+  background: rgba(1, 137, 255, 0.1);
+}
+
+.Formulario .checkbox label:before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: none;
+  border: 3px solid #0774d9;
+  position: absolute;
+  border-radius: 3px;
+  left: 17px;
+  bottom: 3px;
+}
+
+.Formulario input[type="checkbox"]:checked + label{
+  padding: 5px 15px;
+  background: #0774d9;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.Formulario input[type="checkbox"]:checked + label:before{
+  display: none;
+}
